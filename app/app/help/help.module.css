@@ -1,0 +1,118 @@
+.heroTitle {
+    color: var(--dark-grey, #333);
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.commonTopicText {
+    color: var(--medium-gray, #605F5F);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.commonTopicText a {
+    color: var(--sky-blue, #17A2B8);
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration:none;
+}
+.mainTopic {
+    border-radius: 10px;
+    border: 1px solid var(--light-gray, #BEBEBE);
+    background: var(--white, #FFF);
+    padding:1rem;
+}
+.mainTopicHeading {
+    color: var(--dark-grey, #333);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.artcileHeading {
+    color: var(--dark-grey, #333);
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.articleCardTitle {
+    color: var(--dark-grey, #333);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.articleCardLink {
+    color: var(--sky-blue, #17A2B8);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration:none;
+}
+.articleCardContainer {
+    border-radius: 10px;
+    background: var(--white-gray, #EDEDED);
+    border-left: 8px solid var(--teal, #BEBEBE);
+    padding: 1.5rem 1rem;
+    text-decoration:none;
+}
+.articleCardContainer:hover {
+    border-left: 8px solid var(--teal, #1ABC9C);
+}
+.taskAllyLine {
+    width: 42px;
+    height: 1px;
+    background: var(--teal, #1ABC9C);
+}
+.taskAllyHeading {
+    color: var(--dark-grey, #333);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.taskAllyText {
+    color: var(--medium-gray, #605F5F);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.statBox{
+    text-align:center
+}
+.statNumber {
+    color: var(--dark-grey, #333);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.statText {
+    color: var(--medium-gray, #605F5F);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.searchBox {
+    border-radius: 10px;
+    border: 1px solid var(--light-gray, #BEBEBE);
+    background: var(--white-gray, #EDEDED);
+    padding:0.75rem 2.75rem;
+}
+.searchArrow{
+    outline:none;
+    border:none;
+    background:none;
+}

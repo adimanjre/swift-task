@@ -1,0 +1,72 @@
+.mainLink {
+    color: var(--dark-grey, #333);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration:none !important;
+}
+.hLine {
+    stroke-width: 1px;
+    background: var(--light-gray, #BEBEBE);
+    width: 284px;
+    height: 1px;
+    margin: 1.25rem 0;
+}
+.subLink {
+    color: var(--medium-gray, #605F5F);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+    text-decoration: none !important;
+    display:flex;
+    align-items:center;
+    margin-bottom:1rem;
+}
+.subLink::before {
+    content: '';
+    display:block;
+    height: 20px;
+    width: 2px;
+    margin-right:0.5rem;
+}
+.subLink:hover::before {
+    content: '';
+    display: block;
+    height: 20px;
+    width: 2px;
+    background: #bebebe;
+    margin-right: 0.5rem;
+}
+.activeLink::before {
+    content: '';
+    display: block;
+    height: 20px;
+    width: 2px;
+    background: #17A2B8;
+    margin-right: 0.5rem;
+}
+.activeLink:hover::before {
+    content: '';
+    display: block;
+    height: 20px;
+    width: 2px;
+    background: #17A2B8;
+    margin-right: 0.5rem;
+}
+.mainHeading {
+    color: var(--dark-grey, #333);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.subHeading {
+    color: var(--dark-grey, #333);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

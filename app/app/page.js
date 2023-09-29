@@ -3,18 +3,12 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import Page from './page.module.css'
-import amazon from '@/public/img/amazon.png'
-import netflix from '@/public/img/netflix.png'
-import adobe from '@/public/img/adobe.png'
-import microsoft from '@/public/img/microsoft.png'
-import salesforce from '@/public/img/salesforce.png'
-import sec1 from '@/public/img/sec-1.png'
-import sec2 from '@/public/img/sec-2.png'
-import sec3 from '@/public/img/sec-3.png'
-import country from '@/public/img/countries.png'
-import users from '@/public/img/man.png'
-import service from '@/public/img/service.png'
-import task from '@/public/img/task.png'
+//import amazon from '../public/img/amazon.png'
+//import netflix from '../public/img/netflix.png'
+//import adobe from '../public/img/adobe.png'
+//import microsoft from '../public/img/microsoft.png'
+//import salesforce from '../public/img/salesforce.png'
+import {signIn } from 'next-auth/react'
 export default function Index() {
     return (
         <div>
@@ -36,44 +30,38 @@ export default function Index() {
                         Empowering over 30 million individuals and teams worldwide to master productivity and stay organized with confidence
                     </p>
                     <div className="d-flex justify-content-center align-items-center gap-5">
-                        <Image src={amazon} className={Page.clientImg} alt="amazon" />
-                        <Image src={netflix} className={Page.clientImg} alt="netflix" />
-                        <Image src={adobe} className={Page.clientImg} alt="adobe" />
-                        <Image src={microsoft} className={Page.clientImg} alt="microsoft" />
-                        <Image src={salesforce} className={Page.clientImg} alt="salesforce" />
+                        {/*<Image src={amazon} className={Page.clientImg} alt="amazon" />*/}
+                        {/*<Image src={netflix} className={Page.clientImg} alt="netflix" />*/}
+                        {/*<Image src={adobe} className={Page.clientImg} alt="adobe" />*/}
+                        {/*<Image src={microsoft} className={Page.clientImg} alt="microsoft" />*/}
+                        {/*<Image src={salesforce} className={Page.clientImg} alt="salesforce" />*/}
                     </div>
                 </div>
             </div>
             <div className="container mt-5">
-                <div className="row mt-5 align-items-center">
-                    <div className="col-6 p-3">
-                        <div className={`${Page.heroSecTopText} mb-4`}>Free Your Mind</div>
-                        <h1 className={`${Page.heroSecTitle} mb-4`}>Unlock a clutter-free mind instantly with SwiftTask's unique natural language recognition</h1>
+                <div className="row mt-5">
+                    <div className="col-5">
+                        <div className={`${Page.heroSecTopText} mb-2`}>Free Your Mind</div>
+                        <h1 className={`${Page.heroSecTitle} mb-3`}>Unlock a clutter-free mind instantly with SwiftTask's unique natural language recognition</h1>
                         <p className={Page.heroBottomText}>Type anything into the task field, and watch as your to-do list materializes with ease and precision.</p>
                     </div>
-                    <div className="col-6">
-                        <Image src={sec1} className="img-fluid" alt="free-mind" />
-                    </div>
+                    <div className="col-7"></div>
                 </div>
-                <div className="row mt-5 align-items-center">
-                    <div className="col-6 p-5">
-                        <Image src={sec2} alt="rediscover" className="img-fluid" />
-                    </div>
-                    <div className="col-6 p-5">
+                <div className="row mt-5">
+                    <div className="col-7"></div>
+                    <div className="col-5">
                         <div className={`${Page.heroSecTopText} mb-2`}>Embrace the Essentials</div>
                         <h1 className={`${Page.heroSecTitle} mb-3`}>Rediscover mental clarity and focus with ease.</h1>
                         <p className={Page.heroBottomText}>SwiftTasks automatically sorts your tasks into Today, Upcoming, and custom Filter views, empowering you to prioritize your most essential work effortlessly.</p>
                     </div>
                 </div>
-                <div className="row mt-5 align-items-center">
-                    <div className="col-6">
-                        <div className={`${Page.heroSecTopText} mb-2`}>Streamline Your Productivity</div>
-                        <h1 className={`${Page.heroSecTitle} mb-3`}>Achieve the perfect balance between work and personal life</h1>
-                        <p className={Page.heroBottomText}>SwiftTasks brings all your tasks together in one app, harmoniously merging personal, work, and team responsibilities in dedicated workspaces. Experience the relief of having everything in one place.</p>
+                <div className="row mt-5">
+                    <div className="col-5">
+                        <div className={`${Page.heroSecTopText} mb-2`}>Free Your Mind</div>
+                        <h1 className={`${Page.heroSecTitle} mb-3`}>Unlock a clutter-free mind instantly with SwiftTask's unique natural language recognition</h1>
+                        <p className={Page.heroBottomText}>Type anything into the task field, and watch as your to-do list materializes with ease and precision.</p>
                     </div>
-                    <div className="col-6">
-                        <Image src={sec3} alt="perfect balance" className="img-fluid"/>
-                    </div>
+                    <div className="col-7"></div>
                 </div>
             </div>
             <div className="container mt-5 py-5">
@@ -87,7 +75,7 @@ export default function Index() {
                 </div>
             </div>
             <div className="container mt-5">
-                <div className="row mt-5 align-items-center">
+                <div className="row mt-5">
                     <div className="col-5">
                         <div className={`${Page.heroSecTopText} mb-4`}>Your Trusted Partner for the Journey</div>
                         <h1 className={`${Page.heroSecTitle} mb-3`}>SwiftTasks, committed for the long haul, is the task manager you can rely on for life.</h1>
@@ -95,36 +83,28 @@ export default function Index() {
                     </div>
                     <div className="col-7 d-flex aling-items-center gap-4 justify-content-center">
                         <div className={`${Page.heroStatbox}d-flex flex-column text-center`}>
-                            <div className={Page.statImage}>
-                                <Image src={country} alt="country" height="80" className="mb-3" />
-                            </div>
+                            <div className={Page.statImage}></div>
                             <div className={Page.statData}>
                                 <h1 className={Page.statNumber}>160+</h1>
                                 <p className={Page.statText}>Total Countries Reached</p>
                             </div>
                         </div>
                         <div className={`${Page.heroStatbox}d-flex flex-column text-center`}>
-                            <div className={Page.statImage}>
-                                <Image src={users} alt="users" height="80" className="mb-3" />
-                            </div>
+                            <div className={Page.statImage}></div>
                             <div className={Page.statData}>
                                 <h1 className={Page.statNumber}>50M</h1>
                                 <p className={Page.statText}>Total Users</p>
                             </div>
                         </div>
                         <div className={`${Page.heroStatbox}d-flex flex-column text-center`}>
-                            <div className={Page.statImage}>
-                                <Image src={service} alt="service" height="80" className="mb-3" />
-                            </div>
+                            <div className={Page.statImage}></div>
                             <div className={Page.statData}>
                                 <h1 className={Page.statNumber}>5+</h1>
                                 <p className={Page.statText}>Years of Service</p>
                             </div>
                         </div>
                         <div className={`${Page.heroStatbox}d-flex flex-column text-center`}>
-                            <div className={Page.statImage}>
-                                <Image src={task} alt="task" height="80" className="mb-3" />
-                            </div>
+                            <div className={Page.statImage}></div>
                             <div className={Page.statData}>
                                 <h1 className={Page.statNumber}>10B</h1>
                                 <p className={Page.statText}>Tasks Completed</p>

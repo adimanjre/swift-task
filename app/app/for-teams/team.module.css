@@ -5,6 +5,7 @@
     font-weight: 700;
     line-height: normal;
 }
+
 .heroText {
     color: var(--medium-gray, #605F5F);
     text-align: center;
@@ -13,6 +14,7 @@
     font-weight: 500;
     line-height: normal;
 }
+
 .heroSecTopText {
     color: var(--teal, #1ABC9C);
     font-size: 14px;
@@ -20,6 +22,7 @@
     font-weight: 500;
     line-height: normal;
 }
+
 .heroSecTitle {
     color: var(--dark-grey, #333);
     font-size: 24px;
@@ -27,6 +30,7 @@
     font-weight: 700;
     line-height: normal;
 }
+
 .heroBottomText {
     color: var(--medium-gray, #605F5F);
     font-size: 16px;
@@ -34,6 +38,7 @@
     font-weight: 500;
     line-height: normal;
 }
+
 .reviewSec {
     color: var(--dark-grey, #333);
     text-align: center;
@@ -42,6 +47,7 @@
     font-weight: 700;
     line-height: normal;
 }
+
 .reviewName {
     color: var(--teal, #1ABC9C);
     font-size: 24px;
@@ -49,6 +55,7 @@
     font-weight: 500;
     line-height: normal;
 }
+
 .statNumber {
     color: #000;
     font-size: 24px;
@@ -56,6 +63,7 @@
     font-weight: 700;
     line-height: normal;
 }
+
 .statText {
     color: var(--medium-gray, #605F5F);
     font-size: 16px;
@@ -63,10 +71,25 @@
     font-weight: 500;
     line-height: normal;
 }
+
 .tagLine {
     color: var(--dark-grey, #333);
     text-align: center;
     font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.clientText {
+    color: var(--dark-grey, #333);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.countTeam {
+    color: var(--dark-grey, #333);
+    font-size: 24px;
     font-style: normal;
     font-weight: 700;
     line-height: normal;
